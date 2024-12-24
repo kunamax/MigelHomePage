@@ -116,6 +116,21 @@ const Home = () => (
           </GridItem>
         </Grid>
       </Section>
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          My Mentor
+        </Heading>
+        <Paragraph>
+          The site was created based on the Takuya Matsuyama&apos;s website
+          <Box align={"center"}>
+            <Link href="https://www.craftz.dog/" target={"_blank"}>
+              <Button variant={"ghost"} leftIcon={<IoLogoInstagram />}>
+                craftz.dog
+              </Button>
+            </Link>
+          </Box>
+        </Paragraph>
+      </Section>
     </Container>
   </Layout>
 )
