@@ -122,13 +122,11 @@ const Home = () => (
         </Heading>
         <Paragraph>
           The site was created based on the Takuya Matsuyama&apos;s website
-          <Box align={"center"}>
-            <Link href="https://www.craftz.dog/" target={"_blank"}>
-              <Button variant={"ghost"} leftIcon={<IoLogoInstagram />}>
-                craftz.dog
-              </Button>
-            </Link>
-          </Box>
+          <Link href="https://www.craftz.dog/" target={"_blank"}>
+            <Button variant={"ghost"} leftIcon={<IoLogoInstagram />}>
+              craftz.dog
+            </Button>
+          </Link>
         </Paragraph>
       </Section>
     </Container>
