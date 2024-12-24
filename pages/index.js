@@ -109,8 +109,10 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Image from 'next/image'
+import Layout from '../components/layouts/article'
 
 const Home = () => (
+  <Layout>
     <Container>
       <Box
         borderRadius="lg"
@@ -183,6 +185,7 @@ const Home = () => (
         </AbsoluteCenter>
       </Section>
     </Container>
+  </Layout>
 )
 
 export default Home
