@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
 import {
   Container,
   Heading,
@@ -28,7 +29,13 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Welcome to my home page!
+        <Typewriter
+          options={{
+            strings: ['Welcome to my homepage!'],
+            autoStart: true,
+            loop: true,
+           }}
+/>
       </Box>
 
       <Box display={{ md: 'flex' }}>
