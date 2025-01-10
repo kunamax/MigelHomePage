@@ -27,11 +27,13 @@ export const WorkGridItem = ({
                                id,
                                title,
                                thumbnail,
+                               link,
                              }) => (
   <Box w="100%" textAlign="center">
     <LinkBox
       as={NextLink}
-      href={`/${category}/${id}`}
+      // href={`/${category}/${id}`}
+      href={link}
       scroll={false}
       cursor="pointer"
     >

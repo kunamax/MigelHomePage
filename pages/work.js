@@ -15,7 +15,7 @@ const Work = () => {
 
         <SimpleGrid columns={[1,1,2]} gap={6}>
           <Section>
-            <WorkGridItem id="game" title="Shadow's Labyrinth" thumbnail={rougeLikeGame}>
+            <WorkGridItem id="game" title="Shadow's Labyrinth" thumbnail={rougeLikeGame} link={"https://github.com/kunamax/PythonProject"}>
               Shadow&apos;s Labyrinth is a rouge-like game that I developed with my friend. It is a turn-based game where you have to navigate through a maze and defeat enemies.
             </WorkGridItem>
           </Section>
