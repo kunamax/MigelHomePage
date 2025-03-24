@@ -14,7 +14,7 @@ const Work = () => {
           Projects
         </Heading>
 
-        <SimpleGrid columns={[2, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
               id="game"

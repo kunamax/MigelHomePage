@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Typewriter from 'typewriter-effect';
+import Typewriter from 'typewriter-effect'
 import {
   Container,
   Heading,
@@ -16,7 +16,9 @@ import Section from '../components/section'
 import Image from 'next/image'
 import Layout from '../components/layouts/article'
 
-import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram} from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
+
+import { CiFileOn } from 'react-icons/ci'
 
 const Home = () => (
   <Layout>
@@ -33,9 +35,9 @@ const Home = () => (
           options={{
             strings: ['Welcome to my homepage!'],
             autoStart: true,
-            loop: true,
-           }}
-/>
+            loop: true
+          }}
+        />
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -67,6 +69,7 @@ const Home = () => (
                 alt="Profile Picture"
                 width="250"
                 height="250"
+                draggable={false}
               />
             </Box>
           </motion.div>
@@ -88,35 +91,70 @@ const Home = () => (
           I have experience with Python, Java, Go. I am currently learning
           Django and React. I have also worked with SQL and NoSQL databases.
         </Paragraph>
+
         <img
           src="https://skillicons.dev/icons?i=python,java,go,django,react,mysql,sqlite,mongodb"
           alt="My Skills"
         />
       </Section>
       <Section delay={0.2}>
-        <Heading as="h3" variant={"section-title"}>
-          <Highlight query="me" styles={{ color: "grassTeal" }}>
+        <Heading as="h3" variant={'section-title'}>
+          Check out my CV
+        </Heading>
+        <Grid templateColumns="repeat(3, 1fr)" gap="6">
+          <GridItem>
+            <a href="/images/CV_Jakub_Sadkiewicz.pdf" download>
+              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
+                Polish CV
+              </Button>
+            </a>
+          </GridItem>
+          <GridItem>
+            <a href="/images/Jakub_Sadkiewicz_CV_english.pdf" download>
+              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
+                English CV
+              </Button>
+            </a>
+          </GridItem>
+          <GridItem>
+            <a href="/images/Jakub_Sadkiewicz_CV_combined.pdf" download>
+              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
+                Polish + English CV
+              </Button>
+            </a>
+          </GridItem>
+        </Grid>
+      </Section>
+      <Section delay={0.2}>
+        <Heading as="h3" variant={'section-title'}>
+          <Highlight query="me" styles={{ color: 'grassTeal' }}>
             Where to find me
           </Highlight>
         </Heading>
         <Grid templateColumns="repeat(3, 1fr)" gap="6">
           <GridItem>
-            <Link href="https://github.com/kunamax" target={"_blank"}>
-            <Button variant={"ghost"} leftIcon={<IoLogoGithub />}>
-              @kunamax
-            </Button>
+            <Link href="https://github.com/kunamax" target={'_blank'}>
+              <Button variant={'ghost'} leftIcon={<IoLogoGithub />}>
+                @kunamax
+              </Button>
             </Link>
           </GridItem>
           <GridItem>
-            <Link href="https://www.linkedin.com/in/jakub-sadkiewicz-3a7960289/" target={"_blank"}>
-              <Button variant={"ghost"} leftIcon={<IoLogoLinkedin />}>
+            <Link
+              href="https://www.linkedin.com/in/jakub-sadkiewicz-3a7960289/"
+              target={'_blank'}
+            >
+              <Button variant={'ghost'} leftIcon={<IoLogoLinkedin />}>
                 Jakub Sadkiewicz
               </Button>
             </Link>
           </GridItem>
           <GridItem>
-            <Link href="https://www.instagram.com/nightmare5235/" target={"_blank"}>
-              <Button variant={"ghost"} leftIcon={<IoLogoInstagram />}>
+            <Link
+              href="https://www.instagram.com/nightmare5235/"
+              target={'_blank'}
+            >
+              <Button variant={'ghost'} leftIcon={<IoLogoInstagram />}>
                 @nightmare5235
               </Button>
             </Link>
@@ -129,8 +167,8 @@ const Home = () => (
         </Heading>
         <Paragraph>
           The site was created based on the Takuya Matsuyama&apos;s website
-          <Link href="https://www.craftz.dog/" target={"_blank"}>
-            <Button variant={"ghost"} leftIcon={<IoLogoInstagram />}>
+          <Link href="https://www.craftz.dog/" target={'_blank'}>
+            <Button variant={'ghost'} leftIcon={<IoLogoInstagram />}>
               craftz.dog
             </Button>
           </Link>
@@ -141,6 +179,3 @@ const Home = () => (
 )
 
 export default Home
-
-
-
