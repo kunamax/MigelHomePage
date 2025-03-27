@@ -9,7 +9,8 @@ import {
   Highlight,
   useColorModeValue,
   Link,
-  Button
+  Button,
+  Center
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
@@ -91,39 +92,28 @@ const Home = () => (
           I have experience with Python, Java, Go. I am currently learning
           Django and React. I have also worked with SQL and NoSQL databases.
         </Paragraph>
-
+      </Section>
+      <Center>
         <img
           src="https://skillicons.dev/icons?i=python,java,go,django,react,mysql,sqlite,mongodb"
           alt="My Skills"
         />
-      </Section>
+      </Center>
       <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>
           Check out my CV
         </Heading>
-        <Grid templateColumns="repeat(3, 1fr)" gap="6">
-          <GridItem>
-            <a href="/images/CV_Jakub_Sadkiewicz.pdf" download>
-              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
-                Polish CV
-              </Button>
-            </a>
-          </GridItem>
-          <GridItem>
-            <a href="/images/Jakub_Sadkiewicz_CV_english.pdf" download>
-              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
-                English CV
-              </Button>
-            </a>
-          </GridItem>
-          <GridItem>
-            <a href="/images/Jakub_Sadkiewicz_CV_combined.pdf" download>
-              <Button variant={'ghost'} leftIcon={<CiFileOn />}>
-                Polish + English CV
-              </Button>
-            </a>
-          </GridItem>
-        </Grid>
+        <Center>
+          {/* <Grid templateColumns="repeat(1, 1fr)" gap="6">
+          <GridItem colSpan={1}> */}
+          <a href="/images/Jakub_Sadkiewicz_CV.pdf">
+            <Button variant={'ghost'} leftIcon={<CiFileOn />}>
+              CV
+            </Button>
+          </a>
+        </Center>
+        {/* </GridItem>
+        </Grid> */}
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>

@@ -6,3 +6,4 @@ package-lock.json
 .DS_Store
 .vscode
 public/.DS_Store
+public/images/.DS_Store
