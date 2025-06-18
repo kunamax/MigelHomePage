@@ -5,6 +5,7 @@ import Layout from '../components/layouts/article'
 
 import rougeLikeGame from '../public/images/game.png'
 import miciuPhotoShop from '../public/images/miciu_piciu.png'
+import objectsDetector from '../public/images/objects_detector.png'
 
 const Work = () => {
   return (
@@ -38,6 +39,17 @@ const Work = () => {
               editing software that allows you to apply filters and
               transformations to images. I used C++, OpenCV and Qt to develop
               this project.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="cpp"
+              title="ObjectsDetector"
+              thumbnail={objectsDetector}
+              link={'https://github.com/kunamax/ObjectsDetector'}
+            >
+              This is an application created in Python to determine what type 
+              of object appears in a photo. The model used is Faster R-CNN.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
