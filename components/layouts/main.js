@@ -8,6 +8,8 @@ const Main = ({ children, router}) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title> Jakub Sadkiewicz - Homepage </title>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon" />
       </Head>
 
       <Navbar path={router.asPath} />

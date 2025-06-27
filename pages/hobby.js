@@ -8,7 +8,7 @@ import dog from '../public/images/miciu.jpeg'
 
 const Hobby = () => {
   return (
-    <Layout>
+    <Layout title={"Hobby"}>
       <Container>
         <Heading as={'h2'} fontSize={20} mb={4}>
           Hobby

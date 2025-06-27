@@ -94,10 +94,12 @@ const Home = () => (
         </Paragraph>
       </Section>
       <Center>
-        <img
-          src="https://skillicons.dev/icons?i=python,java,go,django,react,mysql,sqlite,mongodb"
-          alt="My Skills"
-        />
+        <Box>
+          <img
+            src="https://skillicons.dev/icons?i=python,java,go,react,c,cpp,cs,julia,mongodb,sqlite,git"
+            alt="My Skills"
+          />
+        </Box>
       </Center>
       <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>

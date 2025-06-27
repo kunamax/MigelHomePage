@@ -9,7 +9,7 @@ import objectsDetector from '../public/images/objects_detector.png'
 
 const Work = () => {
   return (
-    <Layout>
+    <Layout title={"Projects"}>
       <Container>
         <Heading as={'h2'} fontSize={20} mb={4}>
           Projects
