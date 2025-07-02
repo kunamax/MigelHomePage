@@ -61,7 +61,7 @@ const Work = () => {
               link={'https://github.com/kunamax/HealthApp'}
             >
               This application was created using the .NET platform to monitor 
-              the user's health and offer personalised health advice.
+              the user&apos;s health and offer personalised health advice.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
