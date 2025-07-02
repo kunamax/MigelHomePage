@@ -6,6 +6,7 @@ import Layout from '../components/layouts/article'
 import rougeLikeGame from '../public/images/game.png'
 import miciuPhotoShop from '../public/images/miciu_piciu.png'
 import objectsDetector from '../public/images/objects_detector.png'
+import healthApp from '../public/images/health_app.png'
 
 const Work = () => {
   return (
@@ -43,13 +44,24 @@ const Work = () => {
           </Section>
           <Section>
             <WorkGridItem
-              id="cpp"
-              title="ObjectsDetector"
+              id="python"
+              title="Objects Detector"
               thumbnail={objectsDetector}
               link={'https://github.com/kunamax/ObjectsDetector'}
             >
               This is an application created in Python to determine what type 
               of object appears in a photo. The model used is Faster R-CNN.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id=".net"
+              title="Health App"
+              thumbnail={healthApp}
+              link={'https://github.com/kunamax/HealthApp'}
+            >
+              This application was created using the .NET platform to monitor 
+              the user's health and offer personalised health advice.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

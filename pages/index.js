@@ -34,7 +34,7 @@ const Home = () => (
       >
         <Typewriter
           options={{
-            strings: ['Welcome to my homepage!'],
+            strings: ['Welcome to my homepage!', 'Welcome to my dojo!', 'Welcome to my space!'],
             autoStart: true,
             loop: true
           }}
@@ -106,16 +106,12 @@ const Home = () => (
           Check out my CV
         </Heading>
         <Center>
-          {/* <Grid templateColumns="repeat(1, 1fr)" gap="6">
-          <GridItem colSpan={1}> */}
           <a href="/images/Jakub_Sadkiewicz_CV.pdf">
             <Button variant={'ghost'} leftIcon={<CiFileOn />}>
               CV
             </Button>
           </a>
         </Center>
-        {/* </GridItem>
-        </Grid> */}
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>
