@@ -12,6 +12,7 @@ import {
   Button,
   Center
 } from '@chakra-ui/react'
+
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import Image from 'next/image'
@@ -82,8 +83,8 @@ const Home = () => (
           Bio
         </Heading>
         <Paragraph>
-          I am a student from Poland. I am interested in programming, modifying
-          cars and playing sports.
+          I am a student from Poland. I am interested in programming, especially
+          distributed systems and machine learning.
         </Paragraph>
         <Heading as="h3" variant="section-title">
           Experience
@@ -102,8 +103,20 @@ const Home = () => (
         </Box>
       </Center>
       <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          <Highlight query="♥" styles={{ color: 'grassTeal' }}>
+            What do I really ♥.
+          </Highlight>
+        </Heading>
+        <Paragraph>
+          Programming, Cycling, Hiking, Chess, Car tuning, Exploring Nature and many more...
+        </Paragraph>
+      </Section>
+      <Section delay={0.2}>
+      </Section>
+      <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>
-          Check out my CV
+          Check out my CV 
         </Heading>
         <Center>
           <a href="/images/Jakub_Sadkiewicz_CV.pdf">
@@ -156,7 +169,7 @@ const Home = () => (
         <Paragraph>
           The site was created based on the Takuya Matsuyama&apos;s website
           <Link href="https://www.craftz.dog/" target={'_blank'}>
-            <Button variant={'ghost'} leftIcon={<IoLogoInstagram />}>
+            <Button variant={'ghost'} leftIcon={<IoLogoGithub />}>
               craftz.dog
             </Button>
           </Link>
