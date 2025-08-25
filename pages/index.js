@@ -12,7 +12,7 @@ import {
   Button,
   Center
 } from '@chakra-ui/react'
-
+import { BioSection, BioYear } from '../components/bio'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import Image from 'next/image'
@@ -28,6 +28,7 @@ const Home = () => (
       <Box
         borderRadius="lg"
         mb={6}
+        mt={2}
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
@@ -91,13 +92,14 @@ const Home = () => (
         </Heading>
         <Paragraph>
           I have experience with Python, Java, Go. I am currently learning
-          Django and React. I have also worked with SQL and NoSQL databases.
+          Django, React and C++. I have also worked with SQL and NoSQL databases.
+          Those are all the technologies, that I&apos;m familiar with:
         </Paragraph>
       </Section>
       <Center>
         <Box>
           <img
-            src="https://skillicons.dev/icons?i=python,java,go,react,c,cpp,cs,julia,mongodb,sqlite,git"
+            src="https://skillicons.dev/icons?i=python,java,go,react,c,cpp,cs,julia,mongodb,sqlite,postgres,mysql,git,dotnet,tensorflow,spring,graphql,rabbitmq,githubactions,jenkins,azure,aws,docker,kubernetes,terraform,ansible,prometheus,grafana,&perline=8"
             alt="My Skills"
           />
         </Box>
@@ -112,7 +114,20 @@ const Home = () => (
           Programming, Cycling, Hiking, Chess, Car tuning, Exploring Nature and many more...
         </Paragraph>
       </Section>
+      {/* <Section delay={0.2}>
+      </Section> */}
       <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Timeline
+        </Heading>
+        <BioSection>
+          <BioYear>2003</BioYear>
+          Born in Cracow, Poland.
+        </BioSection>
+        <BioSection>
+          <BioYear>2022 to present</BioYear>
+          Pursuing the Master of Science in Computer Science at the AGH University in Cracow.
+        </BioSection>
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant={'section-title'}>
@@ -167,7 +182,7 @@ const Home = () => (
           My Mentor
         </Heading>
         <Paragraph>
-          The site was created based on the Takuya Matsuyama&apos;s website
+          This website was created with the kind assistance of Takuya Matsuyama&apos;s course
           <Link href="https://www.craftz.dog/" target={'_blank'}>
             <Button variant={'ghost'} leftIcon={<IoLogoGithub />}>
               craftz.dog
