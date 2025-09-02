@@ -17,6 +17,7 @@ import Paragraph from '../components/paragraph'
 import Section from '../components/section'
 import Image from 'next/image'
 import Layout from '../components/layouts/article'
+import Footer from '../components/footer'
 
 import { IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5'
 
@@ -190,6 +191,7 @@ const Home = () => (
           </Link>
         </Paragraph>
       </Section>
+      <Footer/>
     </Container>
   </Layout>
 )

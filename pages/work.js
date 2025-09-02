@@ -8,6 +8,8 @@ import miciuPhotoShop from '../public/images/miciu_piciu.png'
 import objectsDetector from '../public/images/objects_detector.png'
 import healthApp from '../public/images/health_app.png'
 
+import Footer from '../components/footer'
+
 const Work = () => {
   return (
     <Layout title={"Projects"}>
@@ -65,6 +67,7 @@ const Work = () => {
             </WorkGridItem>
           </Section>
         </SimpleGrid>
+        <Footer/>
       </Container>
     </Layout>
   )

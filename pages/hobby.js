@@ -6,6 +6,8 @@ import { motion } from 'framer-motion'
 
 import dog from '../public/images/miciu.jpeg'
 
+import Footer from '../components/footer'
+
 const Hobby = () => {
   return (
     <Layout title={"Hobby"}>
@@ -26,6 +28,7 @@ const Hobby = () => {
             </Section>
           </motion.button>
         </SimpleGrid>
+        <Footer/>
       </Container>
     </Layout>
   )
